@@ -1,0 +1,6 @@
+print("Enter the string: ")
+text = input()
+pos_st =  text.rfind(' (')
+pos_fn = text.rfind(')')
+text = text.replace(text[pos_st:pos_fn + 1], '')
+print(text)
